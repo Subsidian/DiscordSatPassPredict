@@ -48,6 +48,7 @@ timezone = pytz.timezone('Pacific/Auckland')
 channel = bot.get_channel(##############)
 #=================================================================================
 ```
+4. ENSURE all these files are in one folder.
 3. There is an included batch file to run this bot, and a succesfull connection to your bot will look like this:
 ```sh
 discord.client logging in using static token
