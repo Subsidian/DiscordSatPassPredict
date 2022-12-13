@@ -28,25 +28,29 @@ As for required libraries, these are here with the correct git command to paste 
 2. Using a text editor (please god not notepad) open bot.py. At the very top, you will see the following code to update. Nothing else needs to be changed, and the included comments should be pretty straight-forward:
 ```sh
 #=================================================================================
-#Update the variables in this box
+
+#Update the variables in this box:
 
 # Replace TOKEN with your bot's API token
-TOKEN = '#####################'
+
+TOKEN = '##################'
 
 # Replace LATITUDE and LONGITUDE with the coordinates where you want to predict the satellite passes
-# https://www.latlong.net/ <- NOT MY WEBSITE, this is just what I used
-LATITUDE = '##########'
-LONGITUDE = '#########'
 
-#set the minimum elevation to ensure you don't recieve the next pass sent in discord isnt a crappy 1 degree pass
+LATITUDE = '###############'
+LONGITUDE = '##############'
+
+# Set the minimum elevation to ensure you don't recieve the next pass as a pretty trash
+
 Minimum_Elevation = 20
 
-# Set the time zone for the observer
-# A list of timezones can be found here: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
-timezone = pytz.timezone('Pacific/Auckland')
+# Set the bot command prefix (default is !, I.e: !passes)
 
-#for 1H automation, change ChannelName to the name of your channel. DO NOT ADD QUOTATIONS, THIS MUST BE NUMERIC NOT A STRING
-channel = bot.get_channel(##############)
+Bot_Prefix = "!"
+
+# Set the time zone for the observer
+
+timezone = pytz.timezone('Pacific/Auckland')
 #=================================================================================
 ```
 4. ENSURE all these files are in one folder.
