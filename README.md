@@ -79,3 +79,8 @@ METEOR M2
 1 40069U 14037A   22341.71436734  .00000011  00000-0  24095-4 0  9997
 2 40069  98.4269 351.5740 0005789 167.9092 192.2218 14.20728651436461
 ```
+
+# To-Do
+1 Automatically update the sattelites TLE's
+2 Look into having a database of all TLE's, kept up to date, and allowing for !passes {Sat name} to check next passes for specific satelites
+3 If I was to host this bot for all and have just an invite link - I would most probably require a database to store everyones Lat-Long and other variables in, in which im not very confortable doing for security purposes (you should be happy!)
