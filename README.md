@@ -85,5 +85,7 @@ Feel free to open an issue for anything (even just support) and i'll do my best 
 
 # To-Do
 1 Automatically update the sattelites TLE's
+
 2 Look into having a database of all TLE's, kept up to date, and allowing for !passes {Sat name} to check next passes for specific satelites
+
 3 If I was to host this bot for all and have just an invite link - I would most probably require a database to store everyones Lat-Long and other variables in, in which im not very confortable doing for security purposes (you should be happy!)
