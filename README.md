@@ -1,8 +1,4 @@
 # DiscordSatPassPredict
-## IMPORTANT:
-there are some errors and I would not recommend
-using this yet. I will update this tomorrow
-once I sort them out
 
 ## Welcome!
 This is a discord bot that can take multiple TLE's as input from a text file
