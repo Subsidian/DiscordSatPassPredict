@@ -9,7 +9,7 @@ import asyncio
 
 #=================================================================================
 
-#Update the variables in this box
+#Update the variables in this box:
 
 # Replace TOKEN with your bot's API token
 
@@ -27,6 +27,10 @@ Minimum_Elevation = 20
 # Set the bot command prefix (default is !, I.e: !passes)
 
 Bot_Prefix = "!"
+
+# Set the time zone for the observer
+
+timezone = pytz.timezone('Pacific/Auckland')
 #=================================================================================
 # NOTHING NEEDED TO BE CHANGED BELOW THIS LINE (but feel free to)
 #=================================================================================
@@ -34,9 +38,6 @@ Bot_Prefix = "!"
 #Discord requires intents now, set to all for simplicity. Probably will revoke this eventually
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=Bot_Prefix,intents=intents)
-
-# Set the time zone for the observer
-timezone = pytz.timezone('Pacific/Auckland')
 
 #for 1H automation, change ChannelName to the name of your channel
 # WIP, NOT USABLE
