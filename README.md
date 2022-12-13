@@ -80,6 +80,9 @@ METEOR M2
 2 40069  98.4269 351.5740 0005789 167.9092 192.2218 14.20728651436461
 ```
 
+# Issues:
+Feel free to open an issue for anything (even just support) and i'll do my best to help
+
 # To-Do
 1 Automatically update the sattelites TLE's
 2 Look into having a database of all TLE's, kept up to date, and allowing for !passes {Sat name} to check next passes for specific satelites
