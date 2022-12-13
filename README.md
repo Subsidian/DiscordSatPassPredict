@@ -26,7 +26,7 @@ As for required libraries, these are here with the correct git command to paste 
 ## Getting-Started
 1. Ensure all libraries are installed.
 2. Using a text editor (please god not notepad) open bot.py. At the very top, you will see the following code to update. Nothing else needs to be changed, and the included comments should be pretty straight-forward:
-```sh
+```python
 #=================================================================================
 
 #Update the variables in this box:
@@ -55,7 +55,7 @@ timezone = pytz.timezone('Pacific/Auckland')
 ```
 4. ENSURE all these files are in one folder.
 3. There is an included batch file to run this bot, and a succesfull connection to your bot will look like this:
-```sh
+```
 discord.client logging in using static token
 discord.gateway Shard ID None has connected to Gateway (Session ID: #######################)
 ```
