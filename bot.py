@@ -71,7 +71,7 @@ async def passes(ctx):
         tle2 = tles[i + 2].strip().replace('2 ', '2 ')
 
         # Set the observer date to the current time
-        observer.date = ephem.date(timezone.localize(datetime.datetime.now()))
+         observer.date = pytz.timezone('Pacific/Auckland').localize(datetime.datetime.now())
 
         # Create a new satellite using the TLE
         satellite = ephem.readtle(satellite_name, tle1, tle2)
