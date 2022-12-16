@@ -7,6 +7,8 @@ import pytz
 import math
 import asyncio
 
+global Set_timezone
+
 #=================================================================================
 
 #Update the variables in this box:
@@ -30,7 +32,7 @@ Bot_Prefix = "!"
 
 # Set the time zone for the observer
 
-timezone = pytz.timezone('Pacific/Auckland')
+Set_timezone = pytz.timezone('Pacific/Auckland')
 #=================================================================================
 # NOTHING NEEDED TO BE CHANGED BELOW THIS LINE (but feel free to)
 #=================================================================================
@@ -71,7 +73,7 @@ async def passes(ctx):
         tle2 = tles[i + 2].strip().replace('2 ', '2 ')
 
         # Set the observer date to the current time
-         observer.date = pytz.timezone('Pacific/Auckland').localize(datetime.datetime.now())
+         observer.date = pytz.timezone(Set_timezone).localize(datetime.datetime.now())
 
         # Create a new satellite using the TLE
         satellite = ephem.readtle(satellite_name, tle1, tle2)
